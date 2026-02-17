@@ -195,8 +195,7 @@ d.counties %>%
 d.stations %>%
   group_by(station_state) %>%
   summarise(avg_drainage_a = mean(Drainage_A)) %>%
-  summarise(max_avg_drainage_a = max(avg_drainage_a))
-print("PA")
+  slice_max(avg_drainage_a)
 
 #Questions
 
