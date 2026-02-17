@@ -79,7 +79,7 @@ d.counties <- d.counties %>%
 view(d.counties)       
 d.counties %>%
   group_by(STATEFP10) %>% 
-  summarise(answer2 = max(countyWaterPerc))
+  slice_max(countyWaterPerc)
 
 #1.3: Count the number of counties in each state
 
