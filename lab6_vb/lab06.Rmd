@@ -145,7 +145,7 @@ Go back to your Lab 3 code. Reload the spatial data and rerun the Moran/LISA ana
 ```{r task2_data, echo=TRUE, message=TRUE}
 # your code here
 library(tidycensus)
-census_api_key("x")
+#census_api_key("x")
 
 #load data
 options(tigris_use_cache = TRUE)
